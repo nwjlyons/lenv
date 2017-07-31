@@ -14,5 +14,10 @@ Example
 
     $ echo 'PORT=8000' > .env
     
+    // Show all enviroment variables
     $ lenv env
     $ PORT=8000
+    
+    // Run a local HTTP server
+    $ lenv go run main.go
+    $ Listening on port :8000
