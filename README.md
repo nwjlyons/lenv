@@ -14,7 +14,7 @@ Example
 
     $ echo 'PORT=8000' > .env
     
-    // Show all enviroment variables
+    // Show all environment variables
     $ lenv env
     $ PORT=8000
     
