@@ -18,8 +18,8 @@ func main() {
 		os.Exit(2)
 	}
 
-	// Capture command to run
-	cmdToRun := flag.Arg(0)
+	// Capture command to execute
+	cmdToExecute := flag.Arg(0)
 	var cmdOptionsToPass []string
 	if flag.NArg() > 1 {
 		cmdOptionsToPass = flag.Args()[1:]
@@ -44,7 +44,8 @@ func main() {
 		envs = append(envs, scanner.Text())
 	}
 
-	cmd := exec.Command(cmdToRun, cmdOptionsToPass...)
+	// Execute the command
+	cmd := exec.Command(cmdToExecute, cmdOptionsToPass...)
 	cmd.Env = envs
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
