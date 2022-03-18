@@ -4,7 +4,7 @@
 
 ## Install
 
-    go get github.com/nwjlyons/lenv
+    go install github.com/nwjlyons/lenv@latest
     
 ## Usage
 
